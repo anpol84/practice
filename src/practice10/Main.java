@@ -1,6 +1,7 @@
 package practice10;
 
-public class Main {
+public class
+Main {
     public static void main(String[] args) {
         ConcreteFactory c = new ConcreteFactory();
         Complex ch1 = c.CreateComplex(10, 5);

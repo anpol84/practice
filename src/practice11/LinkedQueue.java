@@ -25,7 +25,7 @@ public class LinkedQueue<E> extends AbstractQueue<E> implements Queue<E>{
 
     @Override
     public E remove() {
-        if (isEmpty()) throw new NoSuchElementException("queue is emty");
+        if (isEmpty()) throw new NoSuchElementException("queue is empty");
         E element = first.data;
         first = first.next;
         size--;

@@ -43,8 +43,8 @@ public class DequeueGame {
     }
 
     public static void main(String[] args) {
-        int [] a = new int[]{2, 3, 5, 8, 0};
-        int [] b = new int[]{1, 9, 4, 7, 5};
+        int [] a = new int[]{6, 2, 9, 8, 1};
+        int [] b = new int[]{7, 5, 0, 4, 3};
         game(a, b);
     }
 }

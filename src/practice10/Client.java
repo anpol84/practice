@@ -1,6 +1,6 @@
 package practice10;
 
-public class Client {
+public class Client{
     public Chair chair;
 
     public void sit(){
