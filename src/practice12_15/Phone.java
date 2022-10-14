@@ -9,7 +9,7 @@ public class Phone {
         if (number.charAt(0) != '+'){
             number = "+7" + number.substring(1);
         }
-        Pattern pattern = Pattern.compile("(\\+\\d+)(\\d{3})(\\d{3})(\\d{4})$");
+        Pattern pattern = Pattern.compile("(\\+[0-9]+)([0-9]{3})([0-9]{3})([0-9]{4})$");
         Matcher matcher = pattern.matcher(number);
         matcher.find();
         phone = new StringBuilder().append(matcher.group(1)).append(matcher.group(2)).

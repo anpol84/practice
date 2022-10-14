@@ -60,6 +60,9 @@ public class LinkedQueue<E> extends AbstractQueue<E> implements Queue<E>{
         size++;
 
     }
+    public void removeElement(E element){
+
+    }
     @Override
     public String toString() {
         String s = "";
