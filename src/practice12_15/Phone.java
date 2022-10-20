@@ -12,7 +12,7 @@ public class Phone {
         Pattern pattern = Pattern.compile("(\\+[0-9]+)([0-9]{3})([0-9]{3})([0-9]{4})$");
         Matcher matcher = pattern.matcher(number);
         matcher.find();
-        phone = new StringBuilder().append(matcher.group(1)).append(matcher.group(2)).
+        phone = new StringBuilder().append(matcher.group(1)).append('-').append(matcher.group(2)).
                 append('-').append(matcher.group(3)).append('-').append(matcher.group(4)).toString();
     }
 

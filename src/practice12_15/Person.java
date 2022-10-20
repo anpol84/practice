@@ -14,7 +14,6 @@ public class Person {
         if (ans.length <= 2 ) patronymic = ' ';
         else patronymic = ans[2].charAt(0);
     }
-
     @Override
     public String toString() {
         return  surname + " " + name + "." +  patronymic + ".";

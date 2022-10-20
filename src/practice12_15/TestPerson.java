@@ -10,7 +10,7 @@ public class TestPerson {
         String s;
         Scanner sc = new Scanner(System.in);
         s = sc.nextLine();
-        String regex = "^[A-Z][a-z]+[\s][A-Z][a-z]+[\s][A-Z][a-z]+";
+        String regex = "^ *[A-Z][a-z]+ {1,}[A-Z][a-z]+ {1,}[A-Z][a-z]+$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(s);
         if (matcher.matches()) {
@@ -19,6 +19,5 @@ public class TestPerson {
         }else{
             System.out.println("Ошибка ввода");
         }
-
     }
 }
